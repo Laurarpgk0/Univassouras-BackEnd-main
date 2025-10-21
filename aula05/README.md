@@ -1,6 +1,6 @@
 # Aula 05
 
-[**<- VOLTAR**](https://github.com/Leandro-Cardoso/Univassouras-BackEnd)
+[**<- VOLTAR**](https://github.com/Laurarpgk0/Univassouras-BackEnd-main)
 
 ## Conteúdo:
 
@@ -12,4 +12,4 @@
 
 <br>
 
-[**<- VOLTAR**](https://github.com/Leandro-Cardoso/Univassouras-BackEnd)
+[**<- VOLTAR**](https://github.com/Laurarpgk0/Univassouras-BackEnd-main)

@@ -1,0 +1,26 @@
+<h1>Confirmação de Exclusão</h1>
+<p>
+  Você tem certeza que deseja deletar a tarefa:
+  <strong>{{ object.title }}</strong>?
+</p>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Sim, deletar</button>
+  <a href="{% url 'todo_list' %}">Cancelar</a>
+</form>
+
+<h1>Listar Tarefas</h1>
+<ul>
+  {% for todo in todos %}
+  <li>
+    {{ todo.title }} - {{ todo.description }} -
+    <a href="{% url 'todo_update' todo.pk %}">Editar</a> -
+    <a href="{% url 'todo_delete' todo.pk %}">Deletar</a>
+  </li>
+  {% empty %}
+  <li>Nenhuma tarefa cadastrada</li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'todo_create' %}">Nova tarefa</a>
